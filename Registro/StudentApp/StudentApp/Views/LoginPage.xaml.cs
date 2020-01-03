@@ -40,8 +40,8 @@ namespace StudentApp.Views
                 else
                 {
                     await DisplayAlert(
+                     "Error",
                      "Usuario o contraseña incorrecta",
-                     connection.Message,
                      "Accept"
                     );
                 return;
