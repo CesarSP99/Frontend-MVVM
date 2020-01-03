@@ -40,7 +40,7 @@ namespace StudentApp.Views
                 else
                 {
                     await DisplayAlert(
-                     "Internet Error",
+                     "Usuario o contraseña incorrecta",
                      connection.Message,
                      "Accept"
                     );
