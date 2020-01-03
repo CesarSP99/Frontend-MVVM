@@ -1,4 +1,5 @@
-﻿using System;
+﻿using StudentApp.Views;
+using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -9,10 +10,9 @@ namespace StudentApp
         public App()
         {
             InitializeComponent();
-
-            MainPage = new MainPage();
+            MainPage = new LoginPage();
+            Ajustes ajustes = new Ajustes();
         }
-
         protected override void OnStart()
         {
         }

@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="StudentApp.Views.LoginPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout
+                Padding="6"
+                BackgroundColor="White">
+                <Image
+                    Source ="">
+                </Image>
+                <Label
+                    Text="Email"
+                    TextColor="Black"
+                >
+                </Label>
+                <Entry
+                    x:Name="tbcorreo"
+                    Placeholder="Ingrese Correo"
+                    TextColor="Gray">
+                </Entry>
+                <Label
+                    Text="Password"
+                    TextColor="Black">
+                </Label>
+                <Entry
+                    x:Name="tbpass"
+                    IsPassword="True"
+                    Placeholder="Ingrese su clave"
+                    TextColor="Gray">
+                </Entry>
+                <ActivityIndicator>
+                </ActivityIndicator>
+                <Button x:Name="btLogin"  
+                    BackgroundColor="Navy"
+                    Text="Login"
+                    TextColor="White"
+                    Clicked="btLogin_Clicked">
+                </Button>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

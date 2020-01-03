@@ -59,13 +59,11 @@ namespace StudentApp.ViewModels
                     "Accept");
                 return;
             }
-
             MainViewModel mainViewModel = MainViewModel.GetInstance();
             mainViewModel.ListStudent = (List<Student>)response.Result;
 
             this.Students = new ObservableCollection<Student>(this.ToStudentCollect());
         }
-
         private IEnumerable<Student> ToStudentCollect()
         {
             ObservableCollection<Student> collect = new ObservableCollection<Student>();
